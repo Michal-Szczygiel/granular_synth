@@ -1,0 +1,49 @@
+{
+    "SynthConfiguration": {
+        "beat_length_ms": 4000.0,
+        "engine_sampling_rate": 96000,
+        "output_directory": "synthesised_tracks",
+        "output_sampling_rate": 96000,
+        "output_bit_depth": 24
+    },
+    "Tracks": [
+        {
+            "track_properties": {
+                "track_name": "track_1",
+                "track_normalization_level": 0.99,
+                "track_panorama": 0.0
+            },
+            "grains_properties": {
+                "sample_file_path": "A4v11.wav",
+                "grains_count": 256,
+                "grains_length_ms": {"type": "Fixed", "equal": 120.0},
+                "window_function": {"type": "SmoothstepRegular", "slope": 5.0},
+                "grains_laudness_normalization": true,
+                "grains_pitch": {"type": "Fixed"}
+            },
+            "beat_sequence": [
+                {
+                    "subdivisions": 40,
+                    "coverage_percentage": 100.0,
+                    "humanization_percents": 25.0,
+                    "volume_deviation_percents": 25.0,
+                    "panorama_deviation_percents": 100.0
+                },
+                {
+                    "subdivisions": 40,
+                    "coverage_percentage": 100.0,
+                    "humanization_percents": 25.0,
+                    "volume_deviation_percents": 25.0,
+                    "panorama_deviation_percents": 100.0
+                },
+                {
+                    "subdivisions": 40,
+                    "coverage_percentage": 100.0,
+                    "humanization_percents": 25.0,
+                    "volume_deviation_percents": 25.0,
+                    "panorama_deviation_percents": 100.0
+                }
+            ]
+        }
+    ]
+}
